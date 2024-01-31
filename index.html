@@ -353,30 +353,48 @@
             }
            
             function SaveContact() {
-
+alert("Inn")
                 var contactName = "Remoon Milad";
 
                 var contactPhone = "01225052724";
 
                 var contactEmail = "rmilad@act.eg";
             
-                var contact = navigator.contacts.create();
+                // var contact = navigator.contacts.create();
 
-                contact.displayName = contactName;
+                // contact.displayName = contactName;
             
-                var phoneNumbers = [];
+                // var phoneNumbers = [];
 
-                phoneNumbers[0] = new ContactField('mobile', contactPhone, true);
+                // phoneNumbers[0] = new ContactField('mobile', contactPhone, true);
 
-                contact.phoneNumbers = phoneNumbers;
+                // contact.phoneNumbers = phoneNumbers;
             
-                var emails = [];
+                // var emails = [];
 
-                emails[0] = new ContactField('work', contactEmail, true);
+                // emails[0] = new ContactField('work', contactEmail, true);
 
-                contact.emails = emails;
+                // contact.emails = emails;
             
-                contact.save(onSuccess, onError);
+                // contact.save(onSuccess, onError);
+		    if ('contacts' in navigator && 'ContactsManager' in window) {
+		        try {
+		          const newContact = new ContactProperties({
+		            name: [new ContactNameProperty({ formatted: contactName })],
+		            email: [new ContactField('home', contactEmail)],
+		            phoneNumbers: [new ContactField('home', contactPhone)],
+		          });
+		
+		          await navigator.contacts.create({ properties: newContact });
+		          alert('Contact saved successfully!');
+		        } catch (error) {
+		          console.error('Error saving contact:', error);
+		          alert('Error saving contact. Please try again.');
+		        }
+		      } else {
+		        // Fallback for browsers that don't support the Contacts API
+		        alert('Contacts API is not supported in this browser. Please try another method to save contacts.');
+		      }
 
             }
             
