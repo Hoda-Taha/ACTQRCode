@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    
-<!-- Mirrored from coderthemes.com/ubold/layouts/default/contacts-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Sep 2020 17:26:35 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Employee orange</title>
+        <title>ACT QR</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -29,247 +27,137 @@
 
         <!-- Begin page -->
         <div id="wrapper">
-
-            <!-- Topbar Start -->
-            <!-- <div class="navbar-custom"></div> -->
-            <!-- end Topbar -->            
-
-            <!-- ============================================================== -->
-            <!-- Start Page Content here -->
-            <!-- ============================================================== -->
-
             <div class="content-page">
                 <div class="content">
-
                     <!-- Start Content-->
                     <div class="container-fluid">
-
                         <div class="row">
                             <div class="col-lg-4 col-xl-4">
                                 <div class="card-box shadow-none text-center mb-1 mb-0 pb-1">
                                     <img src="assets/images/ACT-Company.jpg" class="img-fluid rounded"
                                         alt="Comany-image">
 
-                                    <img src="assets/images/users/user1.jpg" class="rounded-circle avatar-lg-profile avatar-lg img-thumbnail act-img"
+                                    <img id="photoURL" src="assets/images/ACT.jpg" class="rounded-circle avatar-lg-profile avatar-lg img-thumbnail act-img"
                                         alt="profile-image">
 
-                                    <h4 class="mb-0">Remoon Milad</h4>
-                                    <p class="text-muted">Technical Manager</p>
-<!-- onclick="SaveContact()" href="wtai://wp/ap;+201225052724;Remoon Milad" -->
-                                    <button type="button" onclick="SaveContact()"  class="btn btn-orange btn-xs waves-effect mb-2 waves-light">Save Contacts</button><a type="button" href="wtai://wp/ap;+201225052724"  class="btn btn-orange btn-xs waves-effect mb-2 waves-light">Save Contacts</a>
-                                    <!-- <button type="button" class="btn btn-orange btn-xs waves-effect mb-2 waves-light">Message</button> -->
+                                    <h4 class="mb-0" id="EmployeeFullName">Remoon Milad</h4>
+                                    <p class="text-muted" id="Position">Technical Manager</p>
+                                    <!-- onclick="SaveContact()" href="wtai://wp/ap;+201225052724;Remoon Milad" -->
+                                    <button type="button" onclick="SaveContact()" class="btn btn-orange btn-xs waves-effect mb-2 waves-light">Save Contacts</button>
 
                                     <div class="text-left mt-3">
-                                        <h4 class="font-13 text-uppercase text-center mb-4">Personal orangermation</h4>
-                                        <!-- <p class="text-muted font-13 mb-3">
-                                            Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the
-                                            1500s, when an unknown printer took a galley of type.
-                                        </p> -->
-                                        <!-- <p class="text-muted mb-2 font-13"><strong>Full Name :</strong> <span class="ml-2">Yousry Mohammed Attia</span></p>
-
-                                        <p class="text-muted mb-2 font-13"><strong>Mobile :</strong><span class="ml-2">(+20) 1115441441</span></p>
-
-                                        <p class="text-muted mb-2 font-13"><strong>Email :</strong> <span class="ml-2 ">user@email.domain</span></p>
-
-                                        <p class="text-muted mb-1 font-13"><strong>Location :</strong> <span class="ml-2">Egypt</span></p> -->
+                                        <h4 class="font-13 text-uppercase text-center mb-4">Personal Information</h4>
                                     </div>
-
-                                    <!-- <ul class="social-list list-inline mt-3 mb-0">
-                                        <li class="list-inline-item">
-                                            <a target="_blank" href="tel:+201225052724" class="social-list-item mx-auto border-orange text-orange"><i
-                                                    class="mdi mdi-phone"></i></a>
-                                                    <p>Phone</p>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a target="_blank" href="sms:+201225052724" class="social-list-item mx-auto border-orange text-orange"><i
-                                                    class="mdi mdi-message-text"></i></a>
-                                                    <p>Message</p>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a target="_blank" href="http://api.whatsapp.com/send?phone=201225052724" class="social-list-item mx-auto border-orange text-orange"><i
-                                                    class="mdi mdi-whatsapp"></i></a>
-                                                    <p>Whatsapp</p>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a target="_blank" href="mailto:rmilad@act.eg" class="social-list-item mx-auto border-orange text-orange"><i
-                                                    class="mdi mdi-email"></i></a>
-                                                    <p>E-mail</p>
-                                        </li>
-                                    </ul> -->
                                     <div class="row mb-3">
                                         <div class="col-3 text-center mb-1">
                                             <li class="list-inline-item">
-                                                <a target="_blank" href="tel:+201225052724" class="social-list-item mx-auto border-orange text-orange"><i
+                                                <a id="PhoneNumber" target="_blank" href="tel:+201225052724" class="social-list-item mx-auto border-orange text-orange"><i
                                                         class="mdi mdi-phone"></i></a>
                                                         <p>Phone</p>
                                             </li>
                                         </div>
                                         <div class="col-3 text-center mb-1">
                                             <li class="list-inline-item">
-                                                <a target="_blank" href="sms:+201225052724" class="social-list-item mx-auto border-orange text-orange"><i
+                                                <a id="MsgNumber" target="_blank" href="sms:+201225052724" class="social-list-item mx-auto border-orange text-orange"><i
                                                         class="mdi mdi-message-text"></i></a>
                                                         <p>Message</p>
                                             </li>
                                         </div>
                                         <div class="col-3 text-center mb-1">
                                             <li class="list-inline-item">
-                                                <a target="_blank" href="http://api.whatsapp.com/send?phone=201225052724" class="social-list-item mx-auto border-orange text-orange"><i
+                                                <a id="WANumber" target="_blank" href="http://api.whatsapp.com/send?phone=01225052724" class="social-list-item mx-auto border-orange text-orange"><i
                                                         class="mdi mdi-whatsapp"></i></a>
                                                         <p>Whatsapp</p>
                                             </li>
                                         </div>
                                         <div class="col-3 text-center mb-1">
                                             <li class="list-inline-item">
-                                                <a target="_blank" href="mailto:rmilad@act.eg" class="social-list-item mx-auto border-orange text-orange"><i
+                                                <a id="EmployeeEmail" target="_blank" href="mailto:rmilad@act.eg" class="social-list-item mx-auto border-orange text-orange"><i
                                                         class="mdi mdi-email"></i></a>
                                                         <p>E-mail</p>
                                             </li>
                                         </div>
                                     </div>
                                 </div> <!-- end card-box -->
-
-                              
-
-                            </div> <!-- end col-->
-
+                            </div> 
                             <div class="col-lg-8 col-xl-8">
                                 <div class="card-box mb-1 shadow-none mb-0">
-                                    <!-- <ul class="nav nav-pills navtab-bg nav-justified">
-                                        <li class="nav-item">
-                                            <a target="_blank" href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Business orangermation
-                                            </a>
-                                        </li>
-                                    </ul> -->
                                     <div class="tab-content pt-0">
                                         <div class="tab-pane show active" id="settings">
                                             <form>
                                                 <h5 class="mb-3 text-uppercase bg-light p-2"><i class="mdi mdi-office-building mr-1"></i> Company</h5>
-                                                <!-- <h5 class="font-13 text-uppercase text-center">Company orange</h5> -->
                                                 <div class="row mb-3">
                                                     <div class="col-3 text-center">
                                                         <li class="list-inline-item pt-3">
-                                                            <a target="_blank" href="http://www.act.eg/" class="social-list-item mx-auto border-orange text-orange"><i
+                                                            <a id="Website" target="_blank" href="http://www.act.eg/" class="social-list-item mx-auto border-orange text-orange"><i
                                                                     class="fa fa-globe"></i></a>
                                                                     <p>Website</p>
                                                         </li>
-                                                        <!-- <a class="form-group" target="_blank" href="http://www.act.eg/">
-                                                            <div class="input-group-prepend">
-                                                                <span class="input-group-text mx-auto btn-orange"><i class="fa fa-globe"></i></span>
-                                                            </div>
-                                                            <p class="text-decoration-underline text-center mt-2 link-dark" id="social-fb">Website</p>
-                                                        </a> -->
                                                     </div>
                                                     <div class="col-3 text-center">
                                                         <li class="list-inline-item pt-3">
-                                                            <a target="_blank" href="http://maps.app.goo.gl/J2AztgWrLruBy6Ko8" class="social-list-item mx-auto border-orange text-orange"><i
+                                                            <a id="Location" target="_blank" href="http://maps.app.goo.gl/J2AztgWrLruBy6Ko8" class="social-list-item mx-auto border-orange text-orange"><i
                                                                     class="fa fa-map-marker"></i></a>
                                                                     <p>Location</p>
                                                         </li>
-                                                        <!-- <a class="form-group" target="_blank" href="http://maps.app.goo.gl/FcUjiF6emLaWf43d7">                                                            
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text mx-auto btn-orange"><i class="fa fa-map-marker"></i></span>
-                                                                </div>
-                                                                <p class="text-decoration-underline text-center mt-2 link-dark" id="social-tw">Location</p>
-                                                            </a> -->
                                                     </div> 
                                                     <div class="col-3 text-center">
                                                         <li class="list-inline-item pt-3">
-                                                            <a target="_blank" href="mailto:customer.experience@act.eg" class="social-list-item mx-auto border-orange text-orange"><i
+                                                            <a id="CompanyEmail" target="_blank" href="mailto:customer.experience@act.eg" class="social-list-item mx-auto border-orange text-orange"><i
                                                                     class="fa fa-envelope"></i></a>
                                                                     <p>E-mail</p>
                                                         </li>
-                                                        <!-- <a class="form-group" target="_blank" href="mailto:transmar@transmar.com" >
-                                                           
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text mx-auto btn-orange"><i class="fa fa-envelope"></i></span>
-                                                                </div>
-                                                                <p class="text-decoration-underline text-center mt-2 link-dark" id="social-sky">E-mail</p>
-                                                            </a> -->
-                                                    </div><!-- end col -->
+                                                    </div>
                                                     <div class="col-3 text-center">
                                                         <li class="list-inline-item pt-3">
-                                                            <a target="_blank" href="tel:19488" class="social-list-item mx-auto border-orange text-orange"><i
+                                                            <a id="Hotline" target="_blank" href="tel:19488" class="social-list-item mx-auto border-orange text-orange"><i
                                                                     class="mdi mdi-phone"></i></a>
                                                                     <p>Hotline</p>
                                                         </li>
-                                                    </div><!-- end col -->
-                                                </div> <!-- end row -->
+                                                    </div>
+                                                </div> 
 
                                                 <h5 class="mb-3 text-uppercase bg-light p-2 "><i class="mdi mdi-earth mr-1"></i> Social Accounts</h5>
                                                 <!-- <h5 class="font-13 text-uppercase text-center ">Social Media</h5> -->
                                                 <div class="row mb-3">
                                                     <div class="col-3 text-center mt-3 mb-1">
                                                         <li class="list-inline-item pt-3">
-                                                            <a target="_blank" href="http://www.facebook.com/acteg/" class="social-list-item mx-auto border-orange text-orange"><i
+                                                            <a id="Facebook" target="_blank" href="http://www.facebook.com/acteg/" class="social-list-item mx-auto border-orange text-orange"><i
                                                                     class="fab fa-facebook"></i></a>
                                                                     <p>Facebook</p>
 
                                                         </li>
-                                                        <!-- <a class="form-group" target="_blank" href="http://www.facebook.com/acteg/">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text mx-auto btn-orange"><i class="fab fa-facebook"></i></span>
-                                                                </div>
-                                                                <p class="text-decoration-underline text-center mt-2 link-dark" id="social-fb">Facebook</p>
-                                                            
-                                                        </a> -->
                                                     </div>
                                                     <div class="col-3 text-center mt-3 mb-1">
                                                         <li class="list-inline-item pt-3">
-                                                            <a target="_blank" href="http://www.youtube.com/channel/UC-voSTSAylFNNn0CK5hjdeA" class="social-list-item mx-auto border-orange text-orange"><i
+                                                            <a id="Youtube" target="_blank" href="http://www.youtube.com/channel/UC-voSTSAylFNNn0CK5hjdeA" class="social-list-item mx-auto border-orange text-orange"><i
                                                                     class="fab fa-youtube"></i></a>
                                                                     <p>Youtube</p>
                                                         </li>
-                                                        <!-- <a class="form-group" target="_blank" href="http://www.youtube.com/channel/UC-voSTSAylFNNn0CK5hjdeA">                                                           
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text mx-auto btn-orange"><i class="fab fa-youtube"></i></span>
-                                                                </div>
-                                                                <p class="text-decoration-underline text-center mt-2 link-dark" id="social-tw">Youtube</p>
-                                                          
-                                                        </a> -->
-                                                    </div> <!-- end col -->
+                                                    </div> 
                                                 <!-- </div> 
 
                                                 <div class="row"> -->
                                                     <div class="col-3 text-center mt-3 mb-1">
                                                         <li class="list-inline-item pt-3">
-                                                            <a target="_blank" href="http://www.instagram.com/advanced_computer_technology_/" class="social-list-item mx-auto border-orange text-orange"><i
+                                                            <a id="Instagram" target="_blank" href="http://www.instagram.com/advanced_computer_technology_/" class="social-list-item mx-auto border-orange text-orange"><i
                                                                     class="fab fa-instagram"></i></a>
                                                                     <p>Instagram</p>
                                                         </li>
-                                                        <!-- <a class="form-group" target="_blank" href="http://www.instagram.com/advanced_computer_technology_/">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text mx-auto btn-orange"><i class="fab fa-instagram"></i></span>
-                                                                </div>
-                                                                <p class="text-decoration-underline text-center mt-2 link-dark" id="social-insta" placeholder="Url">Instagram</p>
-                                                           
-                                                        </a> -->
                                                     </div>
                                                     <div class="col-3 text-center mt-3 mb-1">
                                                         <li class="list-inline-item pt-3">
-                                                            <a target="_blank" href="http://www.linkedin.com/company/advanced-computer-technology/" class="social-list-item mx-auto border-orange text-orange"><i
+                                                            <a id="LinkedIn" target="_blank" href="http://www.linkedin.com/company/advanced-computer-technology/" class="social-list-item mx-auto border-orange text-orange"><i
                                                                     class="fab fa-linkedin"></i></a>
                                                                     <p>Linkedin</p>
                                                         </li>
-                                                        <!-- <a class="form-group" target="_blank" href="http://www.linkedin.com/company/advanced-computer-technology/">
-                                                           
-                                                           
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text mx-auto btn-orange"><i class="fab fa-linkedin"></i></span>
-                                                                </div>
-                                                                <p class="text-decoration-underline text-center mt-2 link-dark" id="social-lin" placeholder="Url">Linkedin</p>
-                                                            
-                                                        </a> -->
-                                                    </div> <!-- end col -->
-                                                </div> <!-- end row -->
-
-                                               
+                                                    </div> 
+                                                </div>                                                
                                             </form>
-                                        </div>
-                                        <!-- end settings content-->
+                                        </div>                                       
 
-                                    </div> <!-- end tab-content -->
-                                </div> <!-- end card-box-->
+                                    </div> 
+                                </div> 
 <!-- Footer Start -->
 <footer class="footer">
     <div class="container-fluid">
@@ -279,15 +167,15 @@
             </div>
             <ul class="social-list p-2 text-center list-inline mb-0 mx-auto">
                 <li class="list-inline-item">
-                    <a target="_blank" href="http://api.whatsapp.com/send?text=http://actqr-2066839370.eu-west-1.elb.amazonaws.com:99/" class="social-list-item border-white text-white"><i
+                    <a id="ShareWhatsapp" target="_blank" href="http://api.whatsapp.com/send?text=http://actqr-2066839370.eu-west-1.elb.amazonaws.com:99/" class="social-list-item border-white text-white"><i
                             class="mdi mdi-whatsapp"></i></a>
                 </li>
                 <li class="list-inline-item text-orange">
-                    <a target="_blank" href="mailto:?subject=Check%20out%20this%20contact&body=http://actqr-2066839370.eu-west-1.elb.amazonaws.com:99/" class="social-list-item border-white text-white"><i
+                    <a id="ShareEmail" target="_blank" href="mailto:?subject=Check%20out%20this%20contact&body=http://actqr-2066839370.eu-west-1.elb.amazonaws.com:99/" class="social-list-item border-white text-white"><i
                             class="mdi mdi-email"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a target="_blank" href="tg://msg_url?url=http://actqr-2066839370.eu-west-1.elb.amazonaws.com:99/" class="social-list-item border-white text-white"><i
+                    <a id="ShareTelegram" target="_blank" href="tg://msg_url?url=http://actqr-2066839370.eu-west-1.elb.amazonaws.com:99/" class="social-list-item border-white text-white"><i
                             class="mdi mdi-telegram"></i></a>
                 </li>
                 
@@ -296,37 +184,68 @@
                             class="mdi mdi-content-copy"></i></a>
                 </li>
             </ul>
-            <!-- <div class="col-md-6">
-                <div class="text-md-right footer-links d-none d-sm-block">
-                    <a target="_blank" href="javascript:void(0);">About Us</a>
-                    <a target="_blank" href="javascript:void(0);">Help</a>
-                    <a target="_blank" href="javascript:void(0);">Contact Us</a>
-                </div>
-            </div> -->
+           
         </div>
     </div>
 </footer>
 <!-- end Footer -->
-                            </div> <!-- end col -->
-                        </div>
-                        <!-- end row-->
+    
+            </div>
+                                
 
-                    </div> <!-- container -->
+                                
+            </div> 
 
-                </div> <!-- content -->
+                            
+            </div> 
 
-                
+                            
 
+                        
             </div>
 
-            <!-- ============================================================== -->
-            <!-- End Page content -->
-            <!-- ============================================================== -->
-
-
         </div>
+    </div>
         <!-- END wrapper -->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
 
+<script>
+    $(document).ready(function(){debugger
+        var url_string = window.location;
+        var url = new URL(url_string);
+        var key = url.searchParams.get("key");
+        
+        $.ajax({url: "http://192.168.1.123:10000/api/EmployeeProfile/GetEmployeeProfileByKey?Key="+key, 
+            success: function(result){debugger
+                if(result.data.photoURL)
+                    $("#photoURL").attr('src','http://192.168.1.123:10000'+result.data.photoURL);
+                $("#EmployeeFullName").html(result.data.employeeFullName);
+                //$("#EmployeeNickName").html(result.data.employeeFullName);
+                $("#Position").html(result.data.position);
+                $("#PhoneNumber").attr('href', 'tel:+2'+ result.data.phoneNumber);            
+                $("#MsgNumber").attr('href', 'sms:+2'+ result.data.phoneNumber);           
+                $("#WANumber").val('http://api.whatsapp.com/send?phone=2'+result.data.phoneNumber);
+                $("#EmployeeEmail").attr('href', 'mailto:'+ result.data.employeeEmail);
+
+                $("#Website").attr('href',  result.data.website);
+                $("#Location").attr('href', result.data.location);
+                $("#CompanyEmail").attr('href', 'mailto:'+ companyEmail);
+                $("#Hotline").attr('href', result.data.hotline);
+                $("#Facebook").attr('href', result.data.facebook);
+                $("#YouTube").attr('href', result.data.youTube);
+                $("#Instagram").attr('href', result.data.instagram);
+                $("#LinkedIn").attr('href', result.data.linkedIn);
+
+                //$("#url").attr('href', 'mailto:'+ result.data.url);
+                $("#ShareWhatsapp").attr('href', 'http://api.whatsapp.com/send?text='+ result.data.url);
+                $("#ShareEmail").attr('href', 'mailto:?subject=Check%20out%20this%20contact&body='+ result.data.url);
+                $("#ShareTelegram").attr('href', 'tg://msg_url?url='+ result.data.url);
+    
+            }
+        });
+    });
+
+</script>
         <script>
             function copyToClipboard() {
               // Create a temporary input element
@@ -360,31 +279,33 @@ alert("Inn")
 
                 var contactEmail = "rmilad@act.eg";
             
-                // var contact = navigator.contacts.create();
+                var contact = navigator.contacts.create();
 
-                // contact.displayName = contactName;
+                contact.displayName = contactName;
             
-                // var phoneNumbers = [];
+                var phoneNumbers = [];
 
-                // phoneNumbers[0] = new ContactField('mobile', contactPhone, true);
+                phoneNumbers[0] = new ContactField('mobile', contactPhone, true);
 
-                // contact.phoneNumbers = phoneNumbers;
+                contact.phoneNumbers = phoneNumbers;
             
-                // var emails = [];
+                var emails = [];
 
-                // emails[0] = new ContactField('work', contactEmail, true);
+                emails[0] = new ContactField('work', contactEmail, true);
 
-                // contact.emails = emails;
+                contact.emails = emails;
             
-                // contact.save(onSuccess, onError);
+                contact.save(onSuccess, onError);
+
 		    if ('contacts' in navigator && 'ContactsManager' in window) {
+                alert("IIIIIIII")
 		        try {
 		          const newContact = new ContactProperties({
 		            name: [new ContactNameProperty({ formatted: contactName })],
 		            email: [new ContactField('home', contactEmail)],
 		            phoneNumbers: [new ContactField('home', contactPhone)],
 		          });
-		
+		//{"displayName": "Test User"}
 		          await navigator.contacts.create({ properties: newContact });
 		          alert('Contact saved successfully!');
 		        } catch (error) {
@@ -396,7 +317,9 @@ alert("Inn")
 		        alert('Contacts API is not supported in this browser. Please try another method to save contacts.');
 		      }
 
-            }
+        }
+
+          
             
             function onSuccess(contact) {
 
